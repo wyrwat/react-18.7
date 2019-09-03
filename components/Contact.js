@@ -12,6 +12,7 @@ var Contact = React.createClass({
           <p className={'contactLabel'}>
               Name: {this.props.item.firstName}
           </p>
+          
           <a href={'mailto:' + this.props.item.email}>
               {this.props.item.email}
           </a>
