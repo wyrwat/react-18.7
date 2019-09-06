@@ -37,17 +37,20 @@ body {
             list-style-type: none;
             display: flex;
             flex-direction: column;
-            //justify-content: center;
+            justify-content: center;
            
             .contactItem {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
+                
                 img {
                     width: 108px;
                     height: 75px;
                 }
+
+                
             }
         }
     }

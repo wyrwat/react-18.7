@@ -9,13 +9,17 @@ var Contact = React.createClass({
       return (
         <div className={'contactItem'}>
           <img className={'contactImage'} src={'https://image.flaticon.com/icons/svg/181/181549.svg'}/>
-          <p className={'contactLabel'}>
+          <div className={'contactLabelContainer'}>
+            <p className={'contactLabel'}>
               Name: {this.props.item.firstName}
-          </p>
-          
-          <a href={'mailto:' + this.props.item.email}>
+            </p>
+            <p className={'contactLabel'}>
+              Lastname: {this.props.item.lastName}
+            </p>
+            <a href={'mailto:' + this.props.item.email}>
               {this.props.item.email}
-          </a>
+            </a>
+          </div>
         </div>
       );
     }
