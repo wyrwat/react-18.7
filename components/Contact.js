@@ -1,5 +1,3 @@
-
-
 var Contact = React.createClass({
     propTypes: {
       item: React.PropTypes.object.isRequired,
@@ -9,7 +7,7 @@ var Contact = React.createClass({
       return (
         <div className={'contactItem'}>
           <img className={'contactImage'} src={'https://image.flaticon.com/icons/svg/181/181549.svg'}/>
-          <div className={'contactLabelContainer'}>
+          <div className={'info'}>
             <p className={'contactLabel'}>
               Name: {this.props.item.firstName}
             </p>
